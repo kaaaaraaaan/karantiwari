@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export function About() {
     return (
-        <Section id="about">
+        <Section id="about" className="bg-white">
             <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold">About Me</h2>
                 <div className="w-16 h-1 bg-[#7e22ce] mx-auto mt-4 rounded-full"></div>
