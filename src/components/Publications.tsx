@@ -36,11 +36,11 @@ export function Publications() {
     return (
         <Section id="publications" className="bg-white">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#0f172a]">My Recent Publications</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-heading">My Recent Publications</h2>
                 <div className="flex justify-center gap-1 mt-4">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <div className="w-16 h-1 bg-blue-500 rounded-full"></div>
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div className="w-16 h-1 bg-primary rounded-full"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ export function Publications() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
-                        className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-100 flex flex-col"
+                        className="bg-surface rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group border border-border-light flex flex-col"
                     >
                         {/* Image */}
                         <div className="relative h-48 w-full overflow-hidden">
@@ -67,20 +67,20 @@ export function Publications() {
                         {/* Content */}
                         <div className="p-6 flex flex-col flex-1 relative">
                             {/* Blue decorative line on left */}
-                            <div className="absolute left-0 top-6 bottom-6 w-1 bg-blue-500"></div>
+                            <div className="absolute left-0 top-6 bottom-6 w-1 bg-primary"></div>
 
-                            <h3 className="font-serif text-xl font-bold text-[#0f172a] mb-4 pl-4">
+                            <h3 className="font-serif text-xl font-bold text-heading mb-4 pl-4">
                                 {pub.title}
                             </h3>
 
-                            <div className="pl-4 mb-6 text-gray-500 text-sm flex-grow">
+                            <div className="pl-4 mb-6 text-muted text-sm flex-grow">
                                 <p>Published On</p>
                                 <p className="font-medium text-gray-800">{pub.platform}</p>
                             </div>
 
                             <div className="pl-4">
                                 <a href={pub.link} target="_blank" rel="noopener noreferrer">
-                                    <Button className="bg-blue-600 hover:bg-blue-700 text-white border-none rounded-md px-6 py-2 h-auto text-sm w-full md:w-auto">
+                                    <Button className="bg-primary hover:bg-primary-hover text-white border-none rounded-md px-6 py-2 h-auto text-sm w-full md:w-auto">
                                         Read The Article
                                     </Button>
                                 </a>

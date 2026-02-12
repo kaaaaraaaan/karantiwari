@@ -1,14 +1,43 @@
 @import "tailwindcss";
 
 @theme {
+  /* ── Fonts ── */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-playfair);
 
+  /* ── Primary palette (purple) ── */
   --color-primary: #7e22ce;
   --color-primary-hover: #6b21a8;
+  --color-primary-light: #a855f7;
+  --color-primary-lighter: #c084fc;
+  --color-primary-50: #faf5ff;
+  --color-primary-100: #f3e8ff;
+  --color-primary-200: #e9d5ff;
+
+  /* ── Secondary / accent (red) ── */
   --color-secondary: #ef4444;
+  --color-secondary-hover: #dc2626;
+
+  /* ── Accent colors for services ── */
+  --color-accent-red: #ef4444;
+  --color-accent-amber: #f59e0b;
+  --color-accent-green: #10b981;
+  --color-accent-blue: #3b82f6;
+
+  /* ── Neutrals ── */
+  --color-heading: #0f172a;
+  --color-body: #4b5563;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+
+  /* ── Surfaces ── */
+  --color-surface: #ffffff;
+  --color-surface-alt: #f9fafb;
+  --color-surface-dark: #0f172a;
   --color-bg-light: #f9fafb;
+  --color-bg-hero: #f3f1f6;
 }
 
 :root {
@@ -40,4 +69,22 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif), Georgia, serif;
+}
+
+/* ── Section heading underline utility ── */
+.section-heading-line {
+  width: 4rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  margin-inline: auto;
+  margin-top: 1rem;
+  background-color: var(--color-primary);
+}
+
+/* ── Focus ring utility for form inputs ── */
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  outline: none;
 }

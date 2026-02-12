@@ -21,10 +21,10 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <Section id="testimonials" className="bg-gray-50/50">
+        <Section id="testimonials" className="bg-surface-alt/50">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#0f172a]">What My Clients Say</h2>
-                <div className="w-16 h-1 bg-[#7e22ce]/50 mx-auto mt-4 rounded-full"></div>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-heading">What My Clients Say</h2>
+                <div className="section-heading-line"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -38,17 +38,17 @@ export function Testimonials() {
                         className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center text-center group"
                     >
                         {/* Quote Icon */}
-                        <div className="mb-6 text-[#7e22ce]">
+                        <div className="mb-6 text-primary">
                             <span className="text-6xl font-serif leading-none opacity-50">“</span>
                         </div>
 
-                        <div className="w-12 h-1 bg-[#7e22ce]/20 mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
+                        <div className="w-12 h-1 bg-primary/20 mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
 
-                        <p className="text-gray-600 leading-relaxed mb-8 italic">
+                        <p className="text-body leading-relaxed mb-8 italic">
                             {testimonial.text}
                         </p>
 
-                        <div className="w-8 h-1 bg-[#7e22ce]/20 mb-6 rounded-full"></div>
+                        <div className="w-8 h-1 bg-primary/20 mb-6 rounded-full"></div>
 
                         <h4 className="font-medium text-gray-800">
                             {testimonial.client}

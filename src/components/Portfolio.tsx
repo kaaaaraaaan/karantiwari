@@ -31,11 +31,11 @@ const projects = [
 
 export function Portfolio() {
     return (
-        <Section id="portfolio" className="bg-gray-50">
+        <Section id="portfolio" className="bg-surface-alt">
             <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold">My Portfolio</h2>
-                <p className="text-gray-500 mt-2">Discover my portfolio and see what I've created!</p>
-                <div className="w-16 h-1 bg-[#7e22ce] mx-auto mt-4 rounded-full"></div>
+                <p className="text-muted mt-2">Discover my portfolio and see what I've created!</p>
+                <div className="section-heading-line"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -59,7 +59,7 @@ export function Portfolio() {
                             />
                             {/* Overlay */}
                             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full text-[#7e22ce] hover:bg-gray-100 transition-colors">
+                                <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full text-primary hover:bg-gray-100 transition-colors">
                                     <ExternalLink size={20} />
                                 </a>
                             </div>
@@ -67,13 +67,13 @@ export function Portfolio() {
 
                         {/* Content */}
                         <div className="p-6">
-                            <span className="text-xs font-bold text-[#7e22ce] uppercase tracking-wider mb-2 block">
+                            <span className="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">
                                 {project.category}
                             </span>
-                            <h3 className="font-serif text-xl font-bold text-[#0f172a] mb-2">
+                            <h3 className="font-serif text-xl font-bold text-heading mb-2">
                                 {project.title}
                             </h3>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-body text-sm">
                                 {project.description}
                             </p>
                         </div>
@@ -82,7 +82,7 @@ export function Portfolio() {
             </div>
 
             <div className="mt-12 text-center">
-                <a href="https://github.com/kaaaaraaaan" target="_blank" className="font-medium text-[#7e22ce] hover:underline flex items-center justify-center gap-2">
+                <a href="https://github.com/kaaaaraaaan" target="_blank" className="font-medium text-primary hover:underline flex items-center justify-center gap-2">
                     View More on GitHub <ExternalLink size={16} />
                 </a>
             </div>

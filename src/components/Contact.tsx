@@ -10,8 +10,8 @@ export function Contact() {
         <Section id="contact">
             <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold">Contact Me</h2>
-                <p className="text-gray-500 mt-2">Have a project in mind? Let's work together!</p>
-                <div className="w-16 h-1 bg-[#7e22ce] mx-auto mt-4 rounded-full"></div>
+                <p className="text-muted mt-2">Have a project in mind? Let's work together!</p>
+                <div className="section-heading-line"></div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -20,7 +20,7 @@ export function Contact() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-[#7e22ce] text-white p-8 md:p-12 rounded-2xl shadow-xl overflow-hidden relative"
+                    className="bg-primary text-white p-8 md:p-12 rounded-2xl shadow-xl overflow-hidden relative"
                 >
                     {/* Decorative Circles */}
                     <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
@@ -69,7 +69,7 @@ export function Contact() {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
+                    className="bg-surface p-8 rounded-2xl shadow-lg border border-border-light"
                 >
                     <form className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -78,7 +78,7 @@ export function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#7e22ce] focus:ring-2 focus:ring-[#7e22ce]/20 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                     placeholder="John Doe"
                                 />
                             </div>
@@ -87,7 +87,7 @@ export function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#7e22ce] focus:ring-2 focus:ring-[#7e22ce]/20 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                     placeholder="john@example.com"
                                 />
                             </div>
@@ -98,7 +98,7 @@ export function Contact() {
                             <input
                                 type="text"
                                 id="subject"
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#7e22ce] focus:ring-2 focus:ring-[#7e22ce]/20 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                 placeholder="Project Inquiry"
                             />
                         </div>
@@ -108,7 +108,7 @@ export function Contact() {
                             <textarea
                                 id="message"
                                 rows={4}
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#7e22ce] focus:ring-2 focus:ring-[#7e22ce]/20 outline-none transition-all resize-none"
+                                className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                                 placeholder="Tell me about your project..."
                             ></textarea>
                         </div>
