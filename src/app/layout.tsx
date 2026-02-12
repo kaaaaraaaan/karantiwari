@@ -20,6 +20,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Karan Tiwari - Web Designer & SEO Specialist",
   description: "Portfolio of Karan Tiwari, Web Designer and SEO Specialist.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
