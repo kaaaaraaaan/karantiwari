@@ -8,7 +8,7 @@ export function About() {
     return (
         <Section id="about" className="bg-white">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold">About Me</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-black">About Me</h2>
                 <div className="section-heading-line"></div>
             </div>
 
@@ -23,7 +23,7 @@ export function About() {
                     <h3 className="font-serif text-2xl font-bold text-heading">
                         Web Designer and SEO Specialist
                     </h3>
-                    <div className="w-12 h-1 bg-gray-200"></div> {/* Separator line */}
+                    <div className="w-12 h-1 bg-primary rounded-full"></div> {/* Separator line */}
 
                     <div className="space-y-4 text-body leading-relaxed">
                         <p>

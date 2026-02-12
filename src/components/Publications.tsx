@@ -37,11 +37,7 @@ export function Publications() {
         <Section id="publications" className="bg-white">
             <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-heading">My Recent Publications</h2>
-                <div className="flex justify-center gap-1 mt-4">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <div className="w-16 h-1 bg-primary rounded-full"></div>
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                </div>
+                <div className="section-heading-line"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

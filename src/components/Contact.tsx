@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 
 export function Contact() {
     return (
-        <Section id="contact">
+        <Section id="contact" className="bg-white">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold">Contact Me</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-black">Contact Me</h2>
                 <p className="text-muted mt-2">Have a project in mind? Let's work together!</p>
                 <div className="section-heading-line"></div>
             </div>

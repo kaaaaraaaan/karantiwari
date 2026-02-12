@@ -33,7 +33,7 @@ export function Portfolio() {
     return (
         <Section id="portfolio" className="bg-surface-alt">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold">My Portfolio</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-black">My Portfolio</h2>
                 <p className="text-muted mt-2">Discover my portfolio and see what I've created!</p>
                 <div className="section-heading-line"></div>
             </div>

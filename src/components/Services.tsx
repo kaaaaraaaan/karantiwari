@@ -32,7 +32,7 @@ export function Services() {
     return (
         <Section id="services" className="bg-surface-alt">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold">What Services I'm Providing</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-black">What Services I'm Providing</h2>
                 <div className="section-heading-line"></div>
             </div>
 

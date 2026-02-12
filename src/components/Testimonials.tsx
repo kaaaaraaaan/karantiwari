@@ -21,7 +21,7 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <Section id="testimonials" className="bg-surface-alt/50">
+        <Section id="testimonials" className="bg-surface-alt">
             <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-heading">What My Clients Say</h2>
                 <div className="section-heading-line"></div>
@@ -42,13 +42,13 @@ export function Testimonials() {
                             <span className="text-6xl font-serif leading-none opacity-50">“</span>
                         </div>
 
-                        <div className="w-12 h-1 bg-primary/20 mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
+                        <div className="w-12 h-1 bg-primary mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
 
                         <p className="text-body leading-relaxed mb-8 italic">
                             {testimonial.text}
                         </p>
 
-                        <div className="w-8 h-1 bg-primary/20 mb-6 rounded-full"></div>
+                        <div className="w-8 h-1 bg-primary mb-6 rounded-full"></div>
 
                         <h4 className="font-medium text-gray-800">
                             {testimonial.client}

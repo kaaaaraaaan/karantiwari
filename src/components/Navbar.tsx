@@ -16,13 +16,13 @@ export function Navbar() {
                 <div className="hidden md:grid md:grid-cols-3 w-full items-center">
                     {/* Left: Navigation */}
                     <nav className="flex items-center gap-6">
-                        <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+                        <Link href="#about" className="text-sm font-medium text-black hover:text-primary transition-colors">
                             About
                         </Link>
-                        <Link href="#work" className="text-sm font-medium hover:text-primary transition-colors">
+                        <Link href="#work" className="text-sm font-medium text-black hover:text-primary transition-colors">
                             Work
                         </Link>
-                        <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+                        <Link href="#skills" className="text-sm font-medium text-black hover:text-primary transition-colors">
                             Skills
                         </Link>
                     </nav>
@@ -72,21 +72,21 @@ export function Navbar() {
                 <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-gray-100 p-4 flex flex-col gap-4 shadow-lg">
                     <Link
                         href="#about"
-                        className="text-sm font-medium hover:text-primary"
+                        className="text-sm font-medium text-black hover:text-primary"
                         onClick={() => setIsOpen(false)}
                     >
                         About
                     </Link>
                     <Link
                         href="#work"
-                        className="text-sm font-medium hover:text-primary"
+                        className="text-sm font-medium text-black hover:text-primary"
                         onClick={() => setIsOpen(false)}
                     >
                         Work
                     </Link>
                     <Link
                         href="#skills"
-                        className="text-sm font-medium hover:text-primary"
+                        className="text-sm font-medium text-black hover:text-primary"
                         onClick={() => setIsOpen(false)}
                     >
                         Skills

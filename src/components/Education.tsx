@@ -36,9 +36,9 @@ const educationData = [
 
 export function Education() {
     return (
-        <Section id="education">
+        <Section id="education" className="bg-white">
             <div className="text-center mb-16">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold">My Education</h2>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-black">My Education</h2>
                 <p className="text-muted mt-2">Everything I learnt from here led me to this.</p>
                 <div className="section-heading-line"></div>
             </div>
